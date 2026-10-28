@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ЗАМЕНИ "oanxe" на свой ник, если хочешь -->
+  <title>oanxe</title>
+  <meta name="description" content="personal page of oanxe">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --fg: #e8e8e8;
+      --muted: #888;
+      --accent: #a3ff12;   /* ← твой акцентный цвет. Меняй на любой: #ff6b9d (розовый), #7c5cff (фиолет), #00d4ff (голубой) */
+      --border: #222;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { margin-bottom: 48px; }
+    h1 { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
+    .sub { color: var(--muted); font-size: 14px; margin-top: 4px; }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    ul { list-style: none; }
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 6px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    li span:first-child { color: var(--muted); flex-shrink: 0; }
+    li span:last-child { text-align: right; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      font-size: 13px;
+      color: var(--fg);
+      border-radius: 4px;
+      transition: 0.15s;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    footer { color: var(--muted); font-size: 12px; margin-top: 64px; border-top: 1px solid var(--border); padding-top: 16px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- ↓ ЗАМЕНИ на свой ник и город -->
+    <h1>oanxe</h1>
+    <div class="sub">from москва · <span id="status">online</span></div>
+  </header>
+
+  <section>
+    <h2>about</h2>
+    <!-- ↓ Пара строк о себе. Пиши что угодно -->
+    <p>привет, я oanxe. тут будет пара строк про меня: чем занимаюсь, что люблю, чем живу. например: учусь, ковыряю линукс, слушаю музыку и делаю этот сайт :3</p>
+  </section>
+
+  <section>
+    <h2>my rig</h2>
+    <!-- ↓ Твоё железо. Меняй/добавляй строки. Если чего-то нет — удали строку -->
+    <ul>
+      <li><span>cpu</span><span>AMD Ryzen 5 5600</span></li>
+      <li><span>gpu</span><span>AMD Radeon RX 6700 XT</span></li>
+      <li><span>ram</span><span>32GB DDR4</span></li>
+      <li><span>nvme</span><span>1TB Kingston</span></li>
+      <li><span>monitor</span><span>MI G27i 27"</span></li>
+      <li><span>keyboard</span><span>Ardor Hunter</span></li>
+      <li><span>mouse</span><span>Attack Shark X11</span></li>
+      <li><span>os</span><span>Arch Linux</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>links</h2>
+    <!-- ↓ Замени ссылки и подписи на свои -->
+    <div class="buttons">
+      <a class="btn" href="https://t.me/твой_ник">telegram</a>
+      <a class="btn" href="https://github.com/твой_ник">github</a>
+      <a class="btn" href="https://openvk.su/твой_ник">openvk</a>
+      <a class="btn" href="mailto:ты@example.com">email</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>news</h2>
+    <!-- ↓ Лента новостей. Добавляй новые строки сверху. Формат: дата + что случилось -->
+    <ul>
+      <li><span>2026-10-28</span><span>запустил сайт :3</span></li>
+      <li><span>2026-10-27</span><span>начал делать этот сайт</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <!-- ↓ Твой ник и год -->
+    oanxe © 2026 · made with &lt;3
+  </footer>
+
+</body>
+</html>
